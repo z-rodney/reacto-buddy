@@ -1,0 +1,40 @@
+{
+  "name": "reacto-buddy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "parcel server/public/index.html",
+    "build-dev": "webpack -w",
+    "start": "node ./server/index.js",
+    "start-dev": "npm run build-dev & nodemon server/index.js --ignore client --ignore server/public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/z-rodney/reacto-buddy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/z-rodney/reacto-buddy/issues"
+  },
+  "homepage": "https://github.com/z-rodney/reacto-buddy#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
+    "webpack": "^5.19.0"
+  },
+  "devDependencies": {
+    "babel-loader": "^8.2.2",
+    "@babel/core": "^7.4.3",
+    "@babel/preset-react": "^7.0.0",
+    "nodemon": "^2.0.7",
+    "parcel-bundler": "^1.12.4",
+    "webpack-cli": "^4.4.0"
+  }
+}
